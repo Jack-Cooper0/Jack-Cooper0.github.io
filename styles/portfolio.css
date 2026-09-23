@@ -36,10 +36,10 @@ body{
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
 }
 .mifoto{
-    width: 110px;
+    width: 210px;
     position: absolute;
-    margin-left: 75%;
-    margin-top: -11%;
+    margin-left: 70%;
+    margin-top: -1%;
     border-radius: 25%;
     
 }
@@ -68,4 +68,11 @@ footer{
     border-top: solid thin red;
     margin-top: 40px;
     color: rgb(255, 255, 255);
+}
+.logos-footer{
+    margin-top: 5px;
+    width: 70px;
+}
+.logos-footer:hover{
+    cursor: pointer;
 }
