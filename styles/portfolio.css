@@ -70,9 +70,17 @@ footer{
     color: rgb(255, 255, 255);
 }
 .logos-footer{
-    margin-top: 5px;
+    display: inline;
+    margin-right: 5px;
     width: 70px;
+    border-radius: 15px;    
 }
-.logos-footer:hover{
-    cursor: pointer;
+    .logos-footer:hover{
+        cursor: pointer;
+        transform: translateY(-4px);
+        box-shadow: 0 3px 3px rgba(255, 255, 255, 0.3);
+    }
+.aviso-copiado{
+    color: white;
+    font-family: arial;
 }
