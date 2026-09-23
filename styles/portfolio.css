@@ -9,7 +9,8 @@ body{
     padding-left: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: rgb(213, 213, 213);
-    box-shadow: 1px -5px 30px rgb(222, 225, 223);
+    box-shadow: 1px -5px 30px rgb(222, 225, 223, 0.7);
+    border-radius: 10px;
 }
 .nom{
     border-bottom: solid 1px  rgb(0, 0, 0);
