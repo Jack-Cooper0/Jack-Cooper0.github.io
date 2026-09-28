@@ -21,6 +21,7 @@ body{
 
 .sobremi{
     margin-left: 20px;
+    width: 1000px;
 }
 
 .targeta{
@@ -44,7 +45,7 @@ body{
 .mifoto{
     width: 210px;
     position: absolute;
-    margin-left: 70%;
+    margin-left: 1200px;
     margin-top: -1%;
     border-radius: 25%;
     
