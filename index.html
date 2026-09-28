@@ -1,54 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
 </head>
 <link rel="stylesheet" href="styles/portfolio.css">
+
 <body>
 
     <nav class="portfolio">
         <header>
-        <h1 class="nom">Alejandro Batista Herrera</h1> <img src="fotos/foto_curriculum.jpeg" alt="" class="mifoto">
-        <h3>Estudiante de Desarrollo de Aplicaciones Multiplataforma</h3>
-    </header>
-    <details class="sobremi">
-        <summary>Sobre mi</summary>
-        <p>Estudiante de DAM (Desarrollo de Aplicaciones Multiplataforma) en el instituto Baix Camp, Reus. <br>
-            tengo un ciclo medio de SMR y acabando el superior de DAM, también hice un curso de programación en <br>
-            2D con unity de OpenWebinars con el que acabé desarrollando un pequeño videojuego donde apliqué lo aprendido.
-        </p>
-    </details>
-    <div>
-        <p> A continuacion, los proyectos que he ido haciendo a lo largo del curso y un proyecto personal</p>
-        <h2>
-            Proyectos:
-        </h2>
-        <div class="targeta">
-            <h4>Proyecto personal:</h4>
-            <a href="https://github.com/Jack-Cooper0/juego">
-                <img src="fotos/fnr_foto.png" alt="" class="fnr"> 
-                <br> Froggy Ninja Rush</a>
-                <hr>
-            <p>Esto fue un videojuego pequeño que hice <br>
-            con Unity, viendo un curso de OpenWebinars.</p>
-        </div>
-    </div>
+            <h1 class="nom">Alejandro Batista Herrera</h1> <img src="fotos/foto_curriculum.jpeg" alt="" class="mifoto">
+            <h3>Estudiante de Desarrollo de Aplicaciones Multiplataforma</h3>
+        </header>
+        <details class="sobremi">
+            <summary>Sobre mi</summary>
+            <p>Estudiante de DAM (Desarrollo de Aplicaciones Multiplataforma) en el instituto Baix Camp, Reus. <br>
+                tengo un ciclo medio de SMR y acabando el superior de DAM, también hice un curso de programación en <br>
+                2D con unity desde OpenWebinars con el que acabé desarrollando un pequeño videojuego donde apliqué lo
+                aprendido.
+            </p>
+        </details>
+        <div>
 
-</nav>
+            <h2>Conocimientos y Habilidades:</h2>
+
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Java</li>
+                <li>JavaScript</li>
+                <li>PHP</li>
+                <li>C#</li>
+            </ul>
+
+            <h2>IDEs y motores gráficos usados:</h2>
+            <ul>
+
+                <img src="fotos/eclipse-removebg-preview.png" alt="" class="ides"> Eclipse
+                <br>
+                <img src="fotos/Logo_unity-removebg-preview.png" alt="" class="ides">
+                <br>
+                <img src="fotos/NetBeans-Logo.wine-removebg-preview.png" alt="" class="ides"> NetBeans
+
+            </ul>
+        </div>
+
+    </nav>
+    <nav class="portfolio">
+        <div class="filtros">
+            <button class="btn-filtro active" onclick="filtrarProyectos('todos', this)">Todo</button>
+            <button class="btn-filtro" onclick="filtrarProyectos('personal', this)">Proyectos Personales</button>
+            <button class="btn-filtro" onclick="filtrarProyectos('clase', this)"> Proyectos de Clase</button>
+        </div>
+        <nav class="proyectos">
+
+            <h2>
+                Proyectos:
+            </h2>
+            <div class="targeta" data-categoria="personal">
+                <a href="https://github.com/Jack-Cooper0/juego">
+                    <img src="fotos/fnr_foto.png" alt="" class="fnr">
+                    <br> Froggy Ninja Rush</a>
+                <hr>
+                <p>Esto fue un videojuego pequeño que hice <br>
+                    con Unity con lo aprendido en un curso de OpenWebinars.</p>
+            </div>
+            <div class="targeta" data-categoria="clase">
+                <img src="" alt="">
+                <hr>
+
+            </div>
+        </nav>
+
+    </nav>
     <footer>
-        <h3>Contáctame</h3>
+        <h3 class="txtFooter">Contáctame</h3>
         <p>
-          ✉️ Correo personal: <a href="mailto:esbc.abh07@gmail.com" class="correo"> esbc.abh07@gmail.com </a> 
-        <br>
-          ✉️ Correo del instituto: <a href="mailto:alejandro.batista@insbaixcamp.cat" class="correo"> alejandro.batista@insbaixcamp.cat</a>
-        <br>
+            ✉️ Correo personal: <a href="mailto:esbc.abh07@gmail.com" class="correo"> esbc.abh07@gmail.com </a>
+            <br>
+            ✉️ Correo del instituto: <a href="mailto:alejandro.batista@insbaixcamp.cat" class="correo">
+                alejandro.batista@insbaixcamp.cat</a>
+            <br>
         </p>
-         <a href="https://www.linkedin.com/in/alejandro-batista-herrera-245b89365/" class="correo"> 
+        <a href="https://www.linkedin.com/in/alejandro-batista-herrera-245b89365/" class="correo">
             <img src="fotos/linkedin-icon-logo-symbol-free.png" alt="" class="logos-footer"> </a>
-            <img src="fotos/discord.png" alt="" class="logos-footer" onclick="copiarTexto('jack_cooper.')" id="copiar-mensaje">
-        
+        <img src="fotos/discord.png" alt="" class="logos-footer" onclick="copiarTexto('jack_cooper.')"
+            id="copiar-mensaje">
+
     </footer>
     <script src="scripts/portfolio.js"></script>
 </body>

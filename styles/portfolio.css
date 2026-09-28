@@ -11,6 +11,7 @@ body{
     background-color: rgb(213, 213, 213);
     box-shadow: 1px -5px 30px rgb(222, 225, 223, 0.7);
     border-radius: 10px;
+    margin-top: 15px;
 }
 .nom{
     border-bottom: solid 1px  rgb(0, 0, 0);
@@ -21,16 +22,20 @@ body{
 .sobremi{
     margin-left: 20px;
 }
+
 .targeta{
     display: inline-block;
+    vertical-align: top;
     border: solid 2px;
     width: 400px;
-    height: 230px;
+    height: 180px;
 
     text-align: center;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
+    padding: 10px;
+}
+.proyectos{
+    width: 90%;
+    margin: auto auto;
 }
 .targeta:hover {
   transform: translateY(-4px);
@@ -43,6 +48,10 @@ body{
     margin-top: -1%;
     border-radius: 25%;
     
+}
+.ides{
+    width: 100px;
+
 }
 
 .fnr{
@@ -59,8 +68,8 @@ a:hover {
 .correo{
     color: rgb(184, 184, 184);
 }
-h3{
-    color: white;
+.txtFooter{
+    color: rgb(211, 209, 209);
     text-shadow: 2px 1px 3px rgb(165, 165, 165);
 
 }
@@ -84,4 +93,24 @@ footer{
 .aviso-copiado{
     color: white;
     font-family: arial;
+}
+
+.btn-filtro{
+background-color: #0a0a0a;
+color: #bb0bf0;
+border: 1px solid #0a0a0a;
+padding: 8px 16px;
+border-radius: 8px;
+cursor: pointer;
+font-weight: 600;
+text-shadow: 1px 1px 10px #a70ad7;
+box-shadow: 0 0 3px #0a0a0a;
+}
+.btn-filtro.active {
+  background-color: #222;
+  color: #fff;
+  border-color: #222;
+}
+.btn-filtro:hover {
+  background-color: #f0f0f0;
 }

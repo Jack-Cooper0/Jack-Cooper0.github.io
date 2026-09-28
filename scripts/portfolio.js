@@ -22,3 +22,20 @@ function copiarTexto(texto) {
   // Lo borra a los 2 segundos
   setTimeout(() => aviso.remove(), 2000);
 }
+function filtrarProyectos(categoria, botonPulsado) {
+
+  const botones = document.querySelectorAll('.btn-filtro');
+  botones.forEach(btn => btn.classList.remove('active'));
+  botonPulsado.classList.add('active');
+ 
+  const tarjetas = document.querySelectorAll('.targeta');
+  tarjetas.forEach(tarjeta => {
+    const catTarjeta = tarjeta.getAttribute('data-categoria');
+    
+    if (categoria === 'todos' || catTarjeta === categoria) {
+      tarjeta.style.display = 'block';
+    } else {
+      tarjeta.style.display = 'none';
+    }
+  });
+}
