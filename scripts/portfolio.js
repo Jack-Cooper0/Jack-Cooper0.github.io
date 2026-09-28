@@ -33,7 +33,7 @@ function filtrarProyectos(categoria, botonPulsado) {
     const catTarjeta = tarjeta.getAttribute('data-categoria');
     
     if (categoria === 'todos' || catTarjeta === categoria) {
-      tarjeta.style.display = 'block';
+      tarjeta.style.display = 'inline-block';
     } else {
       tarjeta.style.display = 'none';
     }
