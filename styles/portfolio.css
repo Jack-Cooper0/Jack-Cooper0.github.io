@@ -62,6 +62,7 @@ body{
     width: 450px;
     height: 500px;
     margin: -20.4% 45%; 
+    text-transform: capitalize;
 }
 .lista-certificats{
     margin-left: -25px;
