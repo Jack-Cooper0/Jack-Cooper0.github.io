@@ -50,9 +50,22 @@ body{
     border-radius: 25%;
     
 }
+.contenedorInfo{
+   width: 90%;
+}
 .ides{
     width: 100px;
 
+}
+.certificats{
+    position: absolute;
+    width: 450px;
+    height: 500px;
+    margin: -27.1% 45%; 
+}
+.lista-certificats{
+    margin-left: -25px;
+    list-style: none;
 }
 
 .fnr{
