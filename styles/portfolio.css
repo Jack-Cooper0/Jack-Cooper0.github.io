@@ -43,9 +43,9 @@ body{
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
 }
 .mifoto{
-    width: 210px;
+    width: 180px;
     position: absolute;
-    margin-left: 75%;
+    margin-left: 65%;
     margin-top: -1%;
     border-radius: 25%;
     
